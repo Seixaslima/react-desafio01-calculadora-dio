@@ -1,4 +1,6 @@
 import { Backspace } from "@mui/icons-material";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 import { useState } from "react";
@@ -101,14 +103,14 @@ function App() {
           <Button label='7' OnClick={() => handleClickNumber('7')} />
           <Button label='8' OnClick={() => handleClickNumber('8')} />
           <Button label='9' OnClick={() => handleClickNumber('9')} />
-          <Button label='+' OnClick={() => handleOperationClick("+")} />
+          <Button label={<AddIcon />} OnClick={() => handleOperationClick("+")} />
         </Row>
 
         <Row>
           <Button label='4' OnClick={() => handleClickNumber('4')} />
           <Button label='5' OnClick={() => handleClickNumber('5')} />
           <Button label='6' OnClick={() => handleClickNumber('6')} />
-          <Button label='-' OnClick={() => handleOperationClick("-")} />
+          <Button label={<RemoveIcon />} OnClick={() => handleOperationClick("-")} />
         </Row>
 
         <Row>
