@@ -1,9 +1,9 @@
 import { InputContainer } from './styles'
 
-export default function Input() {
+export default function Input({ value }: { value: string }) {
   return (
     <InputContainer>
-      <input />
+      <input value={value} />
     </InputContainer>
   )
 }
