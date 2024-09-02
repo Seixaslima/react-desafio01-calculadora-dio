@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { ButtonContainer } from './styles'
 
 interface IButton {
-  label: String,
+  label: String | ReactElement,
   OnClick: React.MouseEventHandler<HTMLButtonElement>
 }
 

@@ -1,3 +1,4 @@
+import { Backspace } from "@mui/icons-material";
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 import { useState } from "react";
@@ -91,7 +92,7 @@ function App() {
 
         <Row>
           <Button label='AC' OnClick={() => handleClear('AC')} />
-          <Button label='C' OnClick={() => handleClear('C')} />
+          <Button label={<Backspace />} OnClick={() => handleClear('C')} />
           <Button label='%' OnClick={() => handleOperationClick('%')} />
           <Button label='+/-' OnClick={() => handleSignalChange()} />
         </Row>
